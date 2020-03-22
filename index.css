@@ -1,0 +1,242 @@
+/* NAV BAR */
+
+.nav-bar a {
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  text-align: left;
+  text-decoration-style: solid;
+  text-size-adjust: 100%;
+}
+
+.nav-bar .logo a {
+  color: white;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 5px 0;
+  margin-right: 16px;
+  white-space: nowrap;
+}
+
+.nav-bar .links .home a {
+  color: white;
+}
+
+.nav-bar .links a {
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px;
+}
+
+.nav-bar .links a:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.nav-bar .links ul li {
+  display: inline-block;
+}
+
+.nav-bar .logo,
+.links {
+  display: inline-block;
+}
+
+.nav-bar {
+  width: 100%;
+  max-width: 1140px;
+  height: 40px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  background-color: rgb(52, 58, 64);
+  padding: 8px 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* SLOGON */
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slogon h1 {
+  font-size: 72px;
+  line-height: 86.4px;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.slogon p {
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.slogon a {
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 4.8px;
+  padding: 8px 16px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.slogon a:hover,
+.card-foot a:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.slogon a:focus,
+.card-foot a:focus {
+  border-color: #007bff;
+  outline: 0;
+  box-shadow: 0 0 0 3.2px rgba(16, 130, 253, 0.801);
+}
+
+.slogon h1,
+p {
+  color: rgb(33, 37, 41);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  text-align: left;
+  text-size-adjust: 100%;
+}
+
+.slogon {
+  background-color: #e9ecef;
+  padding: 64px 32px;
+  margin: 80px 0 24px;
+  border-radius: 4.8px;
+  align-items: center;
+}
+
+/* content */
+
+.card img {
+  width: 100%;
+  border-radius: 3px 3px 0 0;
+  border-style: none;
+  vertical-align: middle;
+}
+
+.card-body h4 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.8px;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.card-body p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  text-align: center;
+}
+
+.card-body {
+  /*flex: 1 1 auto;???????*/
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 20px;
+}
+
+.card-foot a {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  background-color: #007bff;
+  padding: 6px 12px;
+  line-height: 24px;
+}
+
+.card-foot {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 12px 20px;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /*?????????*/
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 4px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  overflow-wrap: break-word;
+  text-size-adjust: 100%;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 30px;
+  margin-bottom: 24px;
+}
+
+/*FOOTER*/
+
+.footer p {
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin: 0;
+}
+
+.footer {
+  background-color: #343a40;
+  width: 100%;
+  padding: 48px 0;
+}
+
+body {
+  margin: 0;
+}
